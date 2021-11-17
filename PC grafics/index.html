@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="shortcut icon" href="./img-video/img/logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon - Компания компьютерной графики</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <a href="./index.html"><img src="./img-video/img/logo.png" alt="Logo" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html"><span>Главная</span></a></li>
+                    <li><a href="./uslugi.html" class="a-hov">Услуги</a></li>
+                    <li><a href="./info.html" class="a-hov">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="t-phon">
+                <img src="./img-video/ico/телефон.svg" alt="телефон" class="phonecc" id="phonecc">
+                <p class="tel" id="t-tel">+7 (912) 676-86-62</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- wrapper -->
+    <div class="wrapper-main-citat">
+        <div class="container">
+            <div class="main">
+                <div class="wrapper-text">
+                    <h1>компания компьютерной графики</h1>
+                    <h4>мы рисуем будущее</h4>
+                </div>
+                <img src="./img-video/ico/стрелка.svg" alt="стрелка">
+            </div>
+            <div class="citat">
+                <p>&laquo;Для художника-творца нет ничего сложнее, чем нарисовать розу, ведь сперва он должен забыть
+                    о всех розах, нарисованных раньше&raquo;</p>
+                <h3>Анри Матисс</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- infinity video -->
+    <video src="./img-video/video/0001-0500 (video-converter.com).mp4" autoplay loop></video>
+
+    <!-- wrapper-gallery-form -->
+    <div class="gallery-images" id="rastr-gallery"><!-- галерея растровых картинок -->
+        <div class="container">
+            <div class="cl-btn-2" id="closeBtn1">
+                <div>
+                    <div class="leftright"></div>
+                    <div class="rightleft"></div>
+                    <span class="close-btn">закрыть</span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="cc"><img src="./img-video/img/rastr/r1.jpg" alt="картинка"></div>
+                <div class="cc"><img src="./img-video/img/rastr/r2.jpg" alt="картинка"></div>
+                <div class="cc"><img src="./img-video/img/rastr/r3.jpg" alt="картинка"></div>
+                <div class="cc"><img src="./img-video/img/rastr/r4.jpg" alt="картинка"></div>
+                <div class="cc"><img src="./img-video/img/rastr/r5.jpg" alt="картинка"></div>
+                <div class="cc"><img src="./img-video/img/rastr/r6.jpg" alt="картинка"></div>
+            </div>
+        </div>
+    </div>
+    <div class="gallery-images" id="vector-gallery"><!-- галерея векторных картинок -->
+        <div class="container">
+            <div class="cl-btn-2" id="closeBtn2">
+                <div>
+                    <div class="leftright"></div>
+                    <div class="rightleft"></div>
+                    <span class="close-btn">закрыть</span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="cc"><img src="./img-video/img/vector/v1.jpg" alt="картинка"></div>
+                <div class="cc"><img src="./img-video/img/vector/v2.jpg" alt="картинка"></div>
+                <div class="cc"><img src="./img-video/img/vector/v3.png" alt="картинка"></div>
+                <div class="cc"><img src="./img-video/img/vector/v4.png" alt="картинка"></div>
+            </div>
+        </div>
+    </div>
+    <div class="gallery-images" id="model3dGallery"><!-- галерея 3D картинок -->
+        <div class="container">
+            <div class="cl-btn-2" id="closeBtn3">
+                <div>
+                    <div class="leftright"></div>
+                    <div class="rightleft"></div>
+                    <span class="close-btn">закрыть</span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="cc"><img src="./img-video/img/3d/r1.png" alt="картинка"></div>
+                <div class="cc"><img src="./img-video/img/3d/r2.png" alt="картинка"></div>
+                <div class="cc"><img src="./img-video/img/3d/r3.png" alt="картинка"></div>
+                <div class="cc"><img src="./img-video/img/3d/r5.png" alt="картинка"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="wrapper-gallery-form">
+        <div class="container">
+            <div class="gallery">
+                <h2>Наши работы</h2>
+                <ul>
+                    <li>
+                        <div class="images rastr" id="rastr">
+                            <h3>Растровая графика</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="images vector" id="vector">
+                            <h3>Векторная графика</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="images models" id="models">
+                            <h3>3D графика</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="form">
+                <h2>Остались вопросы?</h2>
+                <form action="formSend.php" method="POST">
+                    <div class="inp">
+                        <input type="text" id="name" name="name" placeholder="Имя" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <input type="tel" id="tel" name="tel" placeholder="Телефон" maxlength="12" title="Образец: +7**********" required>
+                    </div>
+                    <textarea name="mess" id="mess" placeholder="Ваше сообщение" required></textarea>
+                    <div class="inf-butt">
+                        <div class="info-text">
+                            <p><img src="./img-video/ico/тел2.svg" class="phone" id="svg" alt="">+7 (912) 676-86-62</p>
+                            <p><img src="./img-video/ico/письмо.svg" class="ema" id="svg" alt="">vklukin1@gmail.com</p>
+                        </div>
+                        <button id="butt" type="button">отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- кнопка вверх -->
+    <button id="btn-top" type="button" hidden><img src="./img-video/ico/кнопка вверх.png" alt="вверх"></button>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <a href="./index.html"><img src="./img-video/img/logo.png" class="logo" alt="Logo"></a>
+            <nav>
+                <ul class="ul1">
+                    <li><a href="./index.html"><span>Главная</span></a></li>
+                    <li><a href="./uslugi.html" class="a-hov">Услуги</a></li>
+                    <li><a href="./info.html" class="a-hov">О нас</a></li>
+                </ul>
+                <ul class="ul2">
+                    <li><a href="https://vk.com/vklukin1"><img src="./img-video/ico/vk_x5F_alt_3_.svg" alt="vk"></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100010327814721"><img src="./img-video/ico/facebook_3_.svg" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/Vlad45307217"><img src="./img-video/ico/twitter_3_.svg" alt="twitter"></a></li>
+                    <li><a href="https://www.instagram.com/vklukin07/"><img src="./img-video/ico/instagram_3_.svg" alt="instagram"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="cpright">
+            <ul>
+                <li><p><img src="./img-video/ico/копирайт.svg" alt="">Klyukin</p></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Публичная оферта</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
